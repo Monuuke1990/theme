@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+
+<style type="text/css">
+.turn-page{
+	background:#fff;
+	text-align:center;
+	vertical-align:middle;
+}
+body{
+    overflow:hidden;
+	font-family: 'Lobster', cursive;
+}
+
+#flipbook{
+    width:40%;
+    height:auto;
+	margin:auto;
+}
+
+.turn-page-wrapper{
+box-shadow: 5px 1px 10px 1px #cacaca;
+
+}
+#flipbook .page{
+    width:400px;
+    height:300px;
+    background-color:white;
+    line-height:300px;
+    font-size:20px;
+    text-align:center;
+	border:1px solid #000;
+}
+
+#flipbook .page-wrapper{
+    -webkit-perspective:2000px;
+    -moz-perspective:2000px;
+    -ms-perspective:2000px;
+    -o-perspective:2000px;
+    perspective:2000px;
+}
+
+#flipbook .hard{
+
+    color:#333;
+    -webkit-box-shadow:inset 0 0 5px #33E0FF;
+    -moz-box-shadow:inset 0 0 5px #33E0FF;
+    -o-box-shadow:inset 0 0 5px #33E0FF;
+    -ms-box-shadow:inset 0 0 5px #33E0FF;
+    box-shadow:inset 0 0 5px #cacaca;
+    font-weight:bold;
+}
+
+#flipbook .odd{
+    background:-webkit-gradient(linear, right top, left top, color-stop(0.95, #FFF), color-stop(1, #DADADA));
+    background-image:-webkit-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-moz-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-ms-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-o-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+    
+}
+
+#flipbook .even{
+    background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
+    background-image:-webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-moz-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-ms-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-o-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:linear-gradient(left, #fff 95%, #dadada 100%);
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+}
+</style>
+</head>
+<body>
+
+<div id="flipbook">
+  <div class="hard"><h3> Take A Tour Shaw.......</h3><img src="flower.jpg" style="width:150px;height:180px;"/></div> 
+  <div class="hard" ><img src="img6.png" style="width:150px;height:150px;margin-top:30px"/><p style="padding:0 10px">Happy Birthday ..<br>BirthdayBoy</p></div>
+  <div> Dear Shaw............. <br>
+  
+  <p style="padding:0 10px">A very special Shaw deserves an equally special day!!!</p>
+  
+  <h3>Happy Birthday............</h3>
+  
+  <div ><img src="cake.jpg" style="width:150px;height:150px;"/></div>
+
+  </div>
+  <div> <p>Hey Actually I didn't want to disturb you at your special day...<br>
+  Hope your whole day was joyfull. Energetic.And.with so many good wishesh :)<br>
+  On Your special Special and Special day you will get all the things that you want <br> happiness also should be there.<br>
+  Now you are turning into old handsome Shaw..:) hahahaha...Sorry
+  
+  </p></div>
+  <div style="background-image:url(img1.png);background-repeat:no-repeat;">  </div>
+  <div > <p style="padding:0 5px">Actually I would like to write so many thing but no..Look At your pic it looks so happy stay always
+  like this...This pic taken by me only.. :)Actually i didnt have that much pic of yours coz you never like to take pic with
+  me.. so sorry ... just kidding <br> I wish you always happy and i want to fight with you now :)</p></div>
+    <div style="background-image:url(img2.jpg);background-repeat:no-repeat;"> <img src="img3.jpg" style="width:200px"/> </div>
+	  <div > <p  style="padding:0 5px">I know I know You may be think why she has kept this picture but dont worry dont be sad its only for Masti ...
+	  Like We always different people towards each other <br>But this is your gift i can give you right now i prepared this 0n 15 days back<br>
+	  So All Credit goes to me only hahahaha.. :) Stay happy always... Healthy...Lots of Care 
+	  </p></div>
+  <div class="hard"><img src="img5.jpg" style="width:200px;margin-top:20px"/></div>
+  <div class="hard"><p style="padding:0 10px"> You deserve all the wonderful things that you are fighting for, and I know that the most beautiful
+  of them are yet to head your way. Happy birthday, Once Again <br> And If  I did something Wrong then Sorry...</p><img src="smile.jpg" style="width:100px;height:100px;"/></div>
+</div>
+
+<script type="text/javascript" src="../../turn.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function() {
+		$("#flipbook").turn({
+		
+		  width: 400,
+		  height: 300,
+		  autoCenter: true
+		});
+
+	});
+	
+	
+	
+</script>
+
+
+</body>
+</html>
